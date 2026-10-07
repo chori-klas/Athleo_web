@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATHLEO - Gizona</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f9f9f9; color: #333; }
+    header { background: #ffffff; border-bottom: 1px solid #ddd; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+    header img { height: 40px; }
+    nav { background: #0f4c81; padding: 10px 20px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+    .grid { display: flex; gap: 20px; flex-wrap: wrap; }
+    .card { background: white; border: 1px solid #ddd; padding: 15px; width: 30%; box-sizing: border-box; text-align: center; }
+    .price { font-size: 1.2em; color: #0f4c81; font-weight: bold; }
+    .btn { display: inline-block; background: #0f4c81; color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html">
+      <img src="Athleo.png" alt="ATHLEO Logo">
+    </a>
+    <div>
+      <input type="text" placeholder="Gizonezkoen artikuluak...">
+      <button>Bilatu</button>
+      <a href="#" style="margin-left: 15px;">🛒 Saskia (0)</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Hasiera</a>
+    <a href="kirolak_deportes.html">Kirolak</a>
+    <a href="gizona_hombre.html">Gizona</a>
+    <a href="emakumea_mujer.html">Emakumea</a>
+    <a href="haurrak_ni_os.html">Haurrak</a>
+    <a href="eskaintzak_ofertas.html">Eskaintzak</a>
+  </nav>
+
+  <main class="container">
+    <h1>Gizonezkoen Kirol Bilduma</h1>
+    <p>Aukeratu gizonentzako produkturik onenak:</p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Korrika Zapatillak</h3>
+        <br><img src="zapatillas_correr.jpg" alt="Korrika Zapatillak" style="width:80%; height:auto;">
+        <p class="price">79,99 €</p>
+        <button class="btn">Saskira add</button>
+      </div>
+      <div class="card">
+        <h3>Jaka Iragaitzailea</h3>
+        <br><img src="jaka.jpg" alt="Jaka Iragaitzailea" style="width:70%; height:auto;">
+        <p class="price">54,99 €</p>
+        <button class="btn">Saskira add</button>
+      </div>
+      <div class="card">
+        <h3>Kirol Housa Mozak</h3>
+        <br><img src="pantalones_cortos.png" alt="Kirol Housa Mozak" style="width:60%; height:auto;">
+        <p class="price">24,99 €</p>
+        <button class="btn">Saskira add</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ATHLEO - Gizonezkoen Bilduma</p>
+  </footer>
+
+</body>
+</html>

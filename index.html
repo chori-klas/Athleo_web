@@ -1,0 +1,77 @@
+<html lang="eu">
+<head>
+  <title>ATHLEO - Hasiera</title>
+ <style>
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+    header { background: #ffffff; border-bottom: 1px solid #ddd; padding: 15px 20px; display: flex; align-items: center; }
+    header img { height: 40px; }
+    .search { margin-left: 24px; }
+    .cart { margin-left: auto; }
+    nav { background: #0f4c81; padding: 10px 20px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .hero { background: #eef4f8; padding: 40px 20px; text-align: center; border-bottom: 1px solid #ddd; }
+    .hero h1 { color: #0f4c81; margin-bottom: 10px; }
+    .container { max-width: 1000px; margin: 20px auto; padding: 0 20px; }
+    .grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: space-between; }
+    .card { background: white; border: 1px solid #ddd; padding: 15px; width: 30%; box-sizing: border-box; text-align: center; }
+    .card img { max-width: 100%; height: auto; }
+    .btn { display: inline-block; background: #0f4c81; color: white; padding: 10px 15px; text-decoration: none; border-radius: 4px; margin-top: 10px; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    
+      <img src="Athleo.png" alt="ATHLEO">
+    
+    <div class="search">
+      <input type="text" placeholder="Bilatu produktuak...">
+      <button>Bilatu</button>
+    </div>
+    <a class="cart" href="#">🛒 Saskia (0)</a>
+  </header>
+
+  <nav>
+    <a href="index.html">Hasiera</a>
+    <a href="kirolak_deportes.html">Kirolak</a>
+    <a href="gizona_hombre.html">Gizona</a>
+    <a href="emakumea_mujer.html">Emakumea</a>
+    <a href="haurrak_ni_os.html">Haurrak</a>
+    <a href="eskaintzak_ofertas.html">Eskaintzak</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Ongi etorri ATHLEO Kirol Dendara</h1>
+    <p>Aurkitu kirol-material onena preziorik lehiakorrenean.</p>
+    <a href="eskaintzak_ofertas.html" class="btn">Eskaintzak Ikusi</a>
+  </section>
+
+  <main class="container">
+    <h2>Kategoria Nabarmenduak</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Gizonen Bilduma</h3>
+        <p>Arropa eta oinetako teknikoak.</p>
+        <a href="gizona_hombre.html" class="btn">Arakatu</a>
+      </div>
+      <div class="card">
+        <h3>Emakumeen Bilduma</h3>
+        <p>Erosotasuna eta errendimendua.</p>
+        <a href="emakumea_mujer.html" class="btn">Arakatu</a>
+      </div>
+      <div class="card">
+        <h3>Haurren Bilduma</h3>
+        <p>Etxeko txikienentzako kirol artikuluak.</p>
+        <a href="haurrak_ni_os.html" class="btn">Arakatu</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 ATHLEO - Kirol Denda Esklusiboa | Eskubide guztiak erreserbatuta.</p>
+  </footer>
+
+</body>
+</html>
