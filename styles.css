@@ -1,7 +1,9 @@
+/* Incluye el borde y el relleno dentro del tamaño definido de cada elemento */
 * {
   box-sizing: border-box;
 }
 
+/* Estilo general de la página: elimina márgenes y define fondo, texto y tipografía */
 body {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* Organiza la cabecera en una fila y añade fondo, separación y borde inferior */
 header {
   display: flex;
   align-items: center;
@@ -20,37 +23,45 @@ header {
   border-bottom: 1px solid #ddd;
 }
 
+/* Ajusta la altura del logo de la cabecera */
 header img {
   height: 40px;
 }
 
+/* Añade una sombra ligera al texto de los enlaces de la cabecera */
 header a {
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* Separa el buscador del contenido que aparece antes */
 .search {
   margin-left: 24px;
 }
 
+/* Evita que el campo de búsqueda sobrepase el ancho disponible */
 .search input {
   max-width: 100%;
 }
 
+/* Añade espacio interior y el cursor de interacción al botón de búsqueda */
 .search button {
   padding: 5px 9px;
   cursor: pointer;
 }
 
+/* Empuja el enlace al inventario hacia el extremo derecho de la cabecera */
 .cart {
   margin-left: auto;
 }
 
+/* Da color de fondo y espacio a la barra de navegación */
 nav {
   padding: 10px 20px;
   background: #0f4c81;
   text-align: center;
 }
 
+/* Coloca los enlaces de navegación en fila y permite que pasen a otra línea */
 nav flex {
   display: flex;
   flex-wrap: wrap;
@@ -58,6 +69,7 @@ nav flex {
   justify-content: center;
 }
 
+/* Da formato a los enlaces de navegación: espacio, color y texto resaltado */
 nav a {
   display: inline-block;
   margin: 5px 12px;
@@ -68,11 +80,13 @@ nav a {
 
 }
 
+/* Subraya los enlaces de navegación al enfocarlos o pasar el cursor */
 nav a:hover,
 nav a:focus {
   text-decoration: underline;
 }
 
+/* Centra la presentación principal y le da fondo y espacio interior */
 .hero {
   padding: 40px 20px;
   background: #eef4f8;
@@ -80,11 +94,13 @@ nav a:focus {
   text-align: center;
 }
 
+/* Resalta el título principal con el color de la tienda */
 .hero h1 {
   margin-bottom: 10px;
   color: #0f4c81;
 }
 
+/* Limita y centra el contenido principal, y aplica una sombra de texto suave */
 .container {
   max-width: 1000px;
   margin: 20px auto;
@@ -92,12 +108,14 @@ nav a:focus {
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.18);
 }
 
+/* Distribuye las tarjetas en filas con espacio entre ellas */
 .grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
 }
 
+/* Da formato a cada tarjeta de categoría y asigna espacio para tres columnas */
 .card {
   width: calc(33.333% - 14px);
   padding: 15px;
@@ -106,6 +124,7 @@ nav a:focus {
   text-align: center;
 }
 
+/* Ajusta las imágenes de las tarjetas para mantener sus proporciones */
 .card img {
   display: block;
   width: 80%;
@@ -115,18 +134,22 @@ nav a:focus {
   object-fit: contain;
 }
 
+/* Define el tamaño de los títulos secundarios de las tarjetas */
 .card h2 {
   font-size: 1.25rem;
 }
 
+/* Define el tamaño de los títulos en los bloques de contacto */
 .contact-grid > flex h2 {
   font-size: 1.25rem;
 }
 
+/* Hace que los elementos de la cuadrícula de contacto se estiren a la misma altura */
 .contact-grid {
   align-items: stretch;
 }
 
+/* Organiza los bloques de contacto en columnas y les da aspecto de tarjeta */
 .contact-grid > flex {
   display: flex;
   flex-direction: column;
@@ -137,27 +160,32 @@ nav a:focus {
   text-align: center;
 }
 
+/* Añade sangría al listado del inventario */
 .inventory-list {
   padding-left: 2.5rem;
 }
 
+/* Separa los productos del inventario con espacio y una línea inferior */
 .inventory-list li {
   margin-bottom: 1rem;
   padding: 0 0 1rem 0.5rem;
   border-bottom: 1px solid #ddd;
 }
 
+/* Mantiene en línea y ajusta el tamaño del título de cada producto */
 .inventory-list h2 {
   display: inline;
   font-size: 1.1rem;
 }
 
+/* Resalta el precio actual con el color de la tienda */
 .price {
   color: #0f4c81;
   font-size: 1.2em;
   font-weight: bold;
 }
 
+/* Muestra el precio anterior en gris y tachado */
 .old-price {
   margin-right: 5px;
   color: #888;
@@ -165,6 +193,7 @@ nav a:focus {
   text-decoration: line-through;
 }
 
+/* Da formato a las etiquetas promocionales con fondo rojo y texto destacado */
 .badge {
   display: inline-block;
   padding: 3px 8px;
@@ -174,6 +203,7 @@ nav a:focus {
   font-weight: bold;
 }
 
+/* Define el aspecto común de los botones y enlaces con estilo de botón */
 .btn {
   display: inline-block;
   margin-top: 10px;
@@ -186,20 +216,24 @@ nav a:focus {
   cursor: pointer;
 }
 
+/* Oscurece el botón cuando se pasa el cursor o recibe el foco */
 .btn:hover,
 .btn:focus {
   background: #0b385f;
 }
 
+/* Cambia el fondo del botón de oferta a rojo */
 .btn-sale {
   background: #e63946;
 }
 
+/* Oscurece el botón de oferta al pasar el cursor o recibir el foco */
 .btn-sale:hover,
 .btn-sale:focus {
   background: #c72f3b;
 }
 
+/* Da fondo oscuro, espacio y texto centrado al pie de página */
 footer {
   margin-top: 40px;
   padding: 20px;
@@ -208,6 +242,7 @@ footer {
   text-align: center;
 }
 
+/* En pantallas medianas, permite ajustar la cabecera y muestra dos tarjetas por fila */
 @media (max-width: 700px) {
   header {
     flex-wrap: wrap;
@@ -222,6 +257,7 @@ footer {
   }
 }
 
+/* En pantallas pequeñas, muestra una tarjeta por fila y reduce el espacio de navegación */
 @media (max-width: 480px) {
   .card {
     width: 100%;
