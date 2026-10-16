@@ -25,6 +25,7 @@ header {
 
 /* Ajusta la altura del logo de la cabecera */
 header img {
+  width: 133.333px;
   height: 40px;
 }
 
@@ -140,7 +141,7 @@ nav a:focus {
 }
 
 /* Define el tamaño de los títulos en los bloques de contacto */
-.contact-grid > flex h2 {
+.contact-grid td h2 {
   font-size: 1.25rem;
 }
 
@@ -150,7 +151,12 @@ nav a:focus {
 }
 
 /* Organiza los bloques de contacto en columnas y les da aspecto de tarjeta */
-.contact-grid > flex {
+.contact-grid tbody,
+.contact-grid tr {
+  display: contents;
+}
+
+.contact-grid td {
   display: flex;
   flex-direction: column;
   flex: 1 1 240px;
@@ -158,6 +164,7 @@ nav a:focus {
   background: #fff;
   border: 1px solid #ddd;
   text-align: center;
+  vertical-align: top;
 }
 
 /* Añade sangría al listado del inventario */
@@ -173,9 +180,18 @@ nav a:focus {
 }
 
 /* Mantiene en línea y ajusta el tamaño del título de cada producto */
-.inventory-list h2 {
+.inventory-list dl {
+  margin: 0;
+}
+
+.inventory-list dt {
   display: inline;
   font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.inventory-list dd {
+  margin: 1em 0;
 }
 
 /* Resalta el precio actual con el color de la tienda */
