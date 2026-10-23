@@ -24,4 +24,4 @@ En la configuración del repositorio, activa GitHub Pages desde la rama principa
 # git commit -m "NOMBRE DE LA VERSION"
 # git push
 
-# Cambia este numero para adieraztuar la version actual del archivo v0.2.2
+# Cambia este numero para adieraztuar la version actual del archivo v0.2.5
